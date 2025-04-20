@@ -1,0 +1,61 @@
+.header {
+  height: 55px;
+  background-color: rgb(228, 228, 228);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  position: fixed;
+  width: 100%;
+}
+
+.left_section {
+  /* background-color: lightblue;
+  width: 170px; */
+  display: flex;
+  
+  align-items: center;
+}
+
+.hamburger-icon {
+  height: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.youtube-logo {
+  height: 20px;
+  margin-right: 50px;
+}
+
+
+.middle_section {
+  background-color: lightcoral;
+  flex: 1;
+  max-width: 500px;
+  margin-left: 70px;
+  margin-right: 35px;
+  display: flex;
+  align-items: center;
+}
+
+#search_bar {
+  height: 40px;
+  width: 300px;
+}
+
+.search-button {
+  height: 40px;
+  width: 50px;
+}
+
+.voice_search_button {
+  height: 40px;
+  width: 50px;
+}
+
+.right_section {
+  width: 300px;
+  background-color: lightblue;
+}
+
+
