@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <style>
+
+    .uber-button {
+      height: 43px;
+      width: 120px;
+      border: none;
+      color: white;
+      background-color: black;
+      cursor: pointer;
+      transition: opacity 0.15s;
+    }
+
+    .uber-button:hover {
+      opacity: 0.8;
+    }
+
+    .amazon-button {
+      height: 40px;
+      width: 180px;
+      border: none;
+      border-radius: 20px;
+      background-color: rgba(255, 216, 20);
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.15s;
+    }
+
+    .amazon-button:hover {
+      background-color: rgba(230, 192, 6, 0.973);
+    }
+
+    .github-button {
+      height: 45px;
+      width: 120px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      background-color: rgb(46, 164, 79);
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: box-shadow 0.15s;
+    }
+
+    .github-button:hover {
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .bootstrapGs-button {
+      height: 45px;
+      width: 120px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      background-color: rgb(121, 82, 179);
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-right: 10px;
+      transition: background-color 0.15s;
+    }
+
+    .bootstrapGs-button:hover {
+      background-color: rgb(84, 55, 128);
+    }
+
+    .bootstrapDl-button {
+      height: 45px;
+      width: 120px;
+      border: none;
+      border-radius: 5px;
+      border-width: 1px;
+      border-color: rgb(108, 117, 2125);
+      border-style: solid;
+      color: rgb(108, 117, 2125);
+      background-color: white;
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.15s, color 0.15s;
+    }
+
+    .bootstrapDl-button:hover {
+      background-color: rgb(108, 117, 2125);
+      color: white;
+    }
+
+    .linkedin-button1 {
+      height: 45px;
+      width: 300px;
+      border: none;
+      border-radius: 20px;
+      color: white;
+      background-color: rgb(10, 102, 194);
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-right: 10px;
+      transition: background-color 0.15s;
+    }
+
+    .linkedin-button1:hover {
+      background-color: rgb(9, 90, 172);
+    }
+
+    .linkedin-button2 {
+      height: 45px;
+      width: 100px;
+      border: none;
+      border-radius: 20px;
+      border-width: 1px;
+      border-color: rgb(10, 102, 194);
+      border-style: solid;
+      color: rgb(10, 102, 194);
+      background-color: white;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-right: 10px;
+      transition: border-width 0.15s, background-color 0.15s;
+    }
+
+    .linkedin-button2:hover {
+      border-width: 2px;
+      background-color: rgb(238, 247, 255);
+    }
+
+    .amazon-website {
+      color: rgb(0, 113, 113);
+      font-size: 23px;
+      transition: color 0.15s;
+    }
+
+    .amazon-website:hover {
+      color: rgb(155, 32, 32);
+    }
+
+    .item-description {
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .stock {
+      color: rgb(0, 118, 0);
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .delivery {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .amazonAtCart-button {
+      height: 40px;
+      width: 150px;
+      border: none;
+      border-radius: 20px;
+      background-color: rgba(255, 216, 20);
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.15s;
+    }
+
+    .amazonAtCart-button:hover {
+      background-color: rgb(224, 190, 16);
+    }
+    
+    .amazonAtCart-button:active {
+      opacity: 0.8;
+    }
+
+    .amazonBuyNow-button {
+      height: 40px;
+      width: 150px;
+      border: none;
+      border-radius: 20px;
+      background-color: rgb(255, 164, 28);
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.15s;
+    }
+
+    .amazonBuyNow-button:hover {
+      background-color: rgb(236, 150, 21);
+    }
+
+    .amazonBuyNow-button:active {
+      opacity: 0.8;
+    }
+  </style>
+  
+  <button class="uber-button">
+    Request now
+  </button><br><br>
+
+  <button class="amazon-button">
+    Add to Cart
+  </button><br><br>
+
+  <button class="github-button">
+    Sign up
+  </button><br><br>
+
+  <button class="bootstrapGs-button">
+    Get started
+  </button>
+
+  <button class="bootstrapDl-button">
+    Download
+  </button><br><br>
+
+  <button class="linkedin-button1">
+    Apply on company website
+  </button>
+
+  <button class="linkedin-button2">
+    Save
+  </button><br><br>
+
+  <div>
+    <a class="amazon-website" href="https://amazon.com/" target="_blank">
+      Back to Amazon
+    </a>
+
+    <p class="item-description">
+      Nike Black Running Shoes
+    </p>
+
+    <p class="stock">
+      $38 - in stock.
+    </p>
+
+    <p class="delivery">
+      Free delivery tomorrow
+    </p>
+
+    <button class="amazonAtCart-button">
+      Add to Cart
+    </button>
+
+    <button class="amazonBuyNow-button">
+      Buy now
+    </button>
+  </div>
+</body>
+</html>
