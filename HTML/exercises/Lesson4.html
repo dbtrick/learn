@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 4</title>
+</head>
+<body>
+
+  <style>
+
+    .container1 {
+      display: flex;
+      align-items: center;
+    }
+
+    .back-button {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      cursor: pointer;
+    }
+
+    .chapter-list {
+      list-style-type: none;
+      display: flex;
+      font-size: 20px;
+      gap: 15px;
+      padding: 0;
+      margin: 20px;
+    }
+
+    .next-button {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      cursor: pointer;
+    }
+
+    .stretch {
+      background-color: green;
+      color: white;
+      font-size: 15px;
+      font-weight: bold;
+      border-style: none;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 15px;
+      padding-right: 15px;
+      cursor: pointer;
+      transition: padding 0.15s;
+    }
+
+    .stretch:hover {
+      font-size: 16px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    .shadow {
+      background-color: green;
+      color: white;
+      font-size: 15px;
+      font-weight: bold;
+      border: none;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 15px;
+      padding-right: 15px;
+      cursor: pointer;
+      box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    .shadow:active {
+      margin-top: 3px;
+      margin-bottom: 3px;
+      box-shadow: none;
+    }
+
+    .stretch-button {
+      background-color: green;
+      color: white;
+      font-size: 15px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: 10px;
+      margin-right: 10px;
+
+      transition: padding 0.15s, margin 0.15s;
+    
+    }
+
+    .stretch-button:hover {
+      padding-left: 25px;
+      padding-right: 25px;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+  </style>
+
+
+  <div class="container1">
+    <button class="back-button">
+      Back
+    </button>
+
+    <ul class="chapter-list">
+      <li><a href="">1</a></li>
+      <li><a href="">2</a></li>
+      <li><a href="">3</a></li>
+      <li><a href="">4</a></li>
+      <li><a href="">5</a></li>
+    </ul>
+
+    <button class="next-button">
+      Next
+    </button>
+  </div><br>
+
+  <button class="stretch">
+    Stretch
+  </button><br><br>
+
+  <button class="shadow">
+    Shadow
+  </button><br><br>
+
+  <div class="container2">
+
+    <button class="stretch-button">
+      One
+    </button>
+
+    <button class="stretch-button">
+      Two
+    </button>
+
+    <button class="stretch-button">
+      Three
+    </button>
+  </div>
+  
+</body>
+</html>
