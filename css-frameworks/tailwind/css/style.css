@@ -1,0 +1,28 @@
+:root {
+  --primary: #0E9F6E;         /* 500 */
+  --primary-dark: #057A55;    /* 600 */
+  --primary-darker: #046C4E;  /* 700 */
+  --primary-deep: #03543F;    /* 800 */
+  --primary-deepest: #014737; /* 900 */
+}
+
+.button {
+  background-color: var(--primary);
+}
+
+.button:hover {
+  background-color: var(--primary-dark);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+section {
+  height: 100vh;
+  padding-top: 80px;
+  scroll-snap-align: start;
+}
+.active-link {
+  color: #31C48D !important; /* Tailwind Blue-700 */
+  font-weight: bold;
+}
