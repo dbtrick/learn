@@ -19,7 +19,7 @@ html {
 }
 section {
   height: 100vh;
-  padding-top: 80px;
+  padding-top: 20px;
   scroll-snap-align: start;
 }
 .active-link {
