@@ -106,14 +106,40 @@ prettyPrintArray(array_diff_assoc($array1, $array2, $array3));
 // array_diff_key
 
 prettyPrintArray(array_diff_assoc($array1, $array2, $array3));
-*/
+
 
 $array1 = ['a' => 1, 'b' => 3, 'c' => 2, 'e' => 4];
 // sorting array
-// asort - sorting by values
+// asort - sorting values
 
 prettyPrintArray($array1);
 
 asort($array1);
 
 prettyPrintArray($array1);
+
+$array1 = ['a' => 1, 'c' => 3, 'b' => 2, 'e' => 4];
+
+// ksort - sorting  keys
+prettyPrintArray($array1);
+
+ksort($array1);
+
+prettyPrintArray($array1);
+
+
+
+// usort - using custom callback to sort whenever you want
+$array1 = ['a' => 1, 'c' => 3, 'b' => 2, 'e' => 4];
+
+prettyPrintArray($array1);
+
+usort($array1, fn($a, $b) => $b <> $a);
+
+prettyPrintArray($array1);
+
+*/
+
+
+
+
