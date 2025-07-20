@@ -8,8 +8,6 @@ $items = ['a' => 1, 'b' => 2, 'c' => 3, 'd' => 4, 'e' => 5];
 
 prettyPrintArray(array_chunk($items, 2, true));
 
-
-
 // array_combine(array $keys, array $values): array
 
 $array1 = ['a', 'b', 'c', 'd', 'e'];
@@ -29,7 +27,6 @@ $even = array_values($even);
 
 prettyPrintArray($even);
 
-
 // array_keys(array $keys, mixed $search_value, bool $strict = false): array
 //- uses to retrieve the value of keys
 
@@ -37,7 +34,6 @@ $array = ['a' => 5, 'b' => 6, 'c' => 7, 'd' => 8, 'e' => 9];
 $keys = array_keys($array);
 
 prettyPrintArray($keys);
-
 
 // array_map(callable|null $callback, array $array,  array ... $arrays): array
 
