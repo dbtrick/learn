@@ -2,7 +2,9 @@
 
 declare(strict_types=1);
 
-require_once '../Transaction.php';
+use LessonClasses\Transaction;
+
+require_once '../../classes/Transaction.php';
 
 $transaction1 = (new Transaction(100, 'Transaction 1'))
     ->addTax(8)
