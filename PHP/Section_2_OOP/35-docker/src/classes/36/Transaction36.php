@@ -5,7 +5,6 @@
 
 declare(strict_types=1);
 
-namespace LessonClasses;
 class Transaction
 {
     private float $amount;
