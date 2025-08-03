@@ -2,6 +2,7 @@
 
 namespace folderName;
 
+
 class CollectionAgency implements DebtCollector
 {
     public function collect(float $owedAmount): float
