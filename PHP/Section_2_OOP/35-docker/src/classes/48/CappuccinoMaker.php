@@ -2,10 +2,11 @@
 
 namespace folderName;
 
+require_once '../../classes/48/CappuccinoTrait.php';
+
+use \folderName\CappuccinoTrait;
+
 class CappuccinoMaker extends CoffeeMaker
 {
-    public function makeCappuccino()
-    {
-        echo static::class . ' is making cappuccino' . PHP_EOL;
-    }
+    use CappuccinoTrait;
 }

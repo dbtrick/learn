@@ -273,7 +273,7 @@ final class BigInteger extends BigNumber
         $diff      = $max->minus($min);
         $bitLength = $diff->getBitLength();
 
-        // try until the number is in range (50% to 100% chance of success)
+        // try until the number is in range (50-variable-storage% to 100% chance of success)
         do {
             $randomNumber = self::randomBits($bitLength, $randomBytesGenerator);
         } while ($randomNumber->isGreaterThan($diff));
