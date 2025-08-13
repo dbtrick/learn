@@ -1,31 +1,21 @@
 <?php
 
-
-/**
- * $_SERVER Superglobal
- * - use for routing
- */
-
 require_once __DIR__ . '/../vendor/autoload.php';
 
+session_start();
 
-/*echo '<pre>';
-print_r($_SERVER);
-echo '</pre>';*/
+define('STORAGE_PATH', __DIR__ . '/../../storage');
 
 $router = new App\Router();
 
-/*$router->register('/', function () {
-    echo 'Home';
-});
-
-$router->register('/invoices', function () {
-    echo 'Invoices content here';
-});*/
-
 $router
-    ->register('/', [\App\Classes\Home::class, 'index'])
-    ->register('/invoices', [\App\Classes\Invoice::class, 'index'])
-    ->register('/invoices/create', [\App\Classes\Invoice::class, 'create']);
+    ->get('/', [\App\Controllers\HomeControllers::class, 'index'])
+    ->post('/upload', [\App\Controllers\HomeControllers::class, 'upload'])
+    ->get('/invoices', [\App\Controllers\InvoiceControllers::class, 'index'])
+    ->get('/invoices/create', [\App\Controllers\InvoiceControllers::class, 'create'])
+    ->post('/invoices/create', [\App\Controllers\InvoiceControllers::class, 'store']);
 
-echo $router->resolve($_SERVER['REQUEST_URI']);
+echo $router->resolve(
+    $_SERVER['REQUEST_URI'],
+    strtolower($_SERVER['REQUEST_METHOD'])
+);
