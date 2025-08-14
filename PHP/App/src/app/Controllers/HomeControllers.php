@@ -3,13 +3,14 @@
 declare(strict_types=1);
 
 namespace App\Controllers;
+
+use App\View;
+
 class HomeControllers
 {
     public function index(): string
     {
-        return <<<FORM
-                   
-               FORM;
+        return (new View('index'))->render();
     }
 
     public function upload()
