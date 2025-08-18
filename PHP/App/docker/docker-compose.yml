@@ -3,21 +3,29 @@ version: '3.8'
 services:
   app:
     build:
-      context: ./
+      context: ""
       dockerfile: Dockerfile
-    container_name: docker-app
+    container_name: excercises-dockerapp
     restart: always
-    working_dir: /var/www
+    working_dir: /var/www/
     volumes:
-      - ../src:/var/www
+      - ../:/var/www
   nginx:
     image: nginx:1.19-alpine
-    container_name: docker-nginx
+    container_name: excercises-nginx
     restart: always
     ports:
-      - "8000:80"
+      - 8000:80
     volumes:
-      - ../src:/var/www
+      - ../:/var/www
       - ./nginx:/etc/nginx/conf.d
-
-
+  db:
+    container_name: excercises-db
+    image: mysql:8.0
+    volumes:
+      - ./storage/mysql:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - 3306:3306
